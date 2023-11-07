@@ -1,22 +1,26 @@
-#ifndef DOG_H
-#define DOH_H
+#include <stdlib.h>
+#include "dog.h"
+
 /**
- * struct dog - a dog's basic info
- * @name: name of dog
- * @age: age of dog
- * @owner: owner of dog
- */
-struct dog my_dog
+  * struct dog - Pomeranian
+  * @name: Richie.
+  * @age: two.
+  * @owner: Jess.
+  *
+  * Description: A white pomeranian.
+  */
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog #d);
+/**
+ * dog_t - Typedef for dog structure
+ */
 typedef struct dog dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-char *strcpy(char *dest, cgar *src);
-int _strlen(char *s);
 #endif
