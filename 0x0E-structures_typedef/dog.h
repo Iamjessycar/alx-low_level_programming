@@ -1,13 +1,12 @@
-#include <stdlib.h>
-#include "dog.h"
+#define DOG_H
 
 /**
-  * struct dog - Pomeranian
-  * @name: Richie.
-  * @age: two.
-  * @owner: Jess.
+  * struct dog - a dog's basic info
+  * @name: First member
+  * @age: Second member
+  * @owner: Third member
   *
-  * Description: A white pomeranian.
+  * Description: Longer description
   */
 struct dog
 {
@@ -15,12 +14,17 @@ struct dog
 	float age;
 	char *owner;
 };
+
 /**
- * dog_t - Typedef for dog structure
+ * dog_t - typedef for stuck dog
  */
 typedef struct dog dog_t;
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
+char *_strcpy(char *dest char *src);
+int_strlen(char *s);
+
 #endif
